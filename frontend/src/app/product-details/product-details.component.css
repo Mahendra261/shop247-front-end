@@ -1,0 +1,9 @@
+#top-products {
+  margin-left: -1 rem;
+}
+
+.col-sm-4 {
+  /* margin-left: -1rem; */
+  margin-right: -2rem;
+  height: 4 rem;
+}
