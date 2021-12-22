@@ -1,0 +1,147 @@
+<h2>Smart Phone</h2>
+<div class="container">
+  <div
+    class="row"
+    id="product-page-banner"
+    style="
+      height: 16rem;
+      width: auto;
+      background-color: darkgray;
+      border-radius: 10px;
+    "
+  >
+    <!-- <img src="../../assets/image1.jpg" alt="First slide" style="height: fit-content;"> -->
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="container">
+        <div class="row" style="margin-left: 1rem">
+          <div class="col-sm-12">
+            <h1>
+              {{ item.discountPrice }}
+              <span style="text-decoration: line-through; color: red"
+                >$199</span
+              >
+            </h1>
+          </div>
+          <br />
+          <div class="row">
+            <br />
+            <div class="col-sm-6">
+              <button
+                class="btn btn-warning"
+                id="product-page-buynow"
+                style="padding: 12px 28px; width: 100%"
+              >
+                Buy Now
+              </button>
+            </div>
+            <div class="col-sm-6">
+              <button
+                class="btn btn-primary"
+                id="product-page-add-to-cart"
+                style="padding: 12px 28px; width: 100%"
+                (click)="addToCart()"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+  </div>
+
+  <br /><br />
+  <h5>Recommended Products</h5>
+  <br />
+
+  <div class="row">
+    <div class="col-sm-4" id="top-products">
+      <div
+        class="card"
+        style="width: 20rem; background-color: rgb(211, 211, 211)"
+      >
+        <br />
+        <div class="col-8">
+          <label class="p-1 bg-warning" style="text-align: left"
+            >#1 In Televisions</label
+          >
+        </div>
+        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="" href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <!-- card2 -->
+    <div class="col-sm-4" id="top-products">
+      <div
+        class="card"
+        style="width: 20rem; background-color: rgb(211, 211, 211)"
+      >
+        <br />
+        <div class="col-8">
+          <label class="p-1 bg-warning" style="text-align: left"
+            >#1 In Televisions</label
+          >
+        </div>
+        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="" href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <!-- card3 -->
+    <div class="col-sm-4" id="top-products">
+      <div
+        class="card"
+        style="width: 20rem; background-color: rgb(211, 211, 211)"
+      >
+        <br />
+        <div class="col-8">
+          <label class="p-1 bg-warning" style="text-align: left"
+            >#1 In Televisions</label
+          >
+        </div>
+        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="" href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

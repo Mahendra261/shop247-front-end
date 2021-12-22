@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h3>Welcome to Shop 24x7</h3>
+      <br>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.</p>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Login</h2>
+          <br>
+          <!-- <p class="card-text"> -->
+          <form class="row g-3" (ngSubmit)="onLogin()" [formGroup]="loginForm">
+            <div class="col-12 form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="login-email" formControlName="email">
+              <div *ngIf="f['email'].errors?.['required'] && (f['email'].dirty || f['email'].touched)"
+                class="form-error-messages" id="error-no-username" style="color: red;">
+                Email is required
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="login-password" formControlName="password">
+              <div *ngIf="f['password'].errors?.['required'] && (f['password'].dirty || f['password'].touched)"
+                class="form-error-messages" id="error-no-username" style="color: red;">
+                Password is required
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" id="login-submit" class="btn btn-primary"
+                style="align-content: right;">Login</button> |
+              <button type="submit" class="btn btn-primary" style="align-content: right;"
+                routerLink="/register">Register</button>
+            </div>
+          </form>
+          <!-- </p> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

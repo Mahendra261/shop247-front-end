@@ -1,0 +1,24 @@
+<div class="container">
+  <h3>Cart</h3>
+  <!-- <p>Total Amount : INR ₹</p> -->
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let i of cart">
+        <td>
+          {{ i.productId }} <br />
+          Price <br />
+          discount ₹ <br />
+          <a href="">Remove</a>
+        </td>
+        <td></td>
+        <td>Price</td>
+      </tr>
+    </tbody>
+  </table>
+  <br /><br />
+  <div style="float: right">
+    <h3 id="cart-grand-total">Grand Total: 500 ₹</h3>
+    <button class="btn btn-warning" id="cart-button">Checkout</button>
+    <button class="btn btn-white" routerLink="/home">Home</button>
+  </div>
+</div>
